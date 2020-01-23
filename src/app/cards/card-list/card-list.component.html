@@ -1,0 +1,7 @@
+<table class="table table-hover" *ngIf="service">
+    <tr *ngFor="let cd of service.list">
+        <td (click)="populateForm(cd)"> {{ cd.cardOwnerName }}</td>
+        <td (click)="populateForm(cd)"> {{ cd.cardNumber }}</td>
+        <td (click)="populateForm(cd)"> {{ cd.expirationDate }}</td>
+    </tr>
+</table>
